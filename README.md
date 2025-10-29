@@ -32,5 +32,5 @@ The tool extracts each file’s **“Consignee (Ship To)”** name, cleans unwan
 
 ## Use Case
 Perfect for **logistics, invoicing, and documentation teams** handling large batches of shipment or billing PDFs.  
-This tool ensures **clean, consistent, and automated file naming** based on consignee details — saving hours of manual effort.
+This tool ensures **clean, consistent, and automated file naming** based on consignee details - saving hours of manual effort.
 
