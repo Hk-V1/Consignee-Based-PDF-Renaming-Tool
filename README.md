@@ -20,7 +20,7 @@ The tool extracts each file’s **“Consignee (Ship To)”** name, cleans unwan
 - Clean extracted names by removing text like *“Buyer’s Order No.”* or *“Dated”*  
 - Rename files intelligently with serial numbers for duplicates  
 - Export all renamed PDFs as a single downloadable ZIP  
-- Simple Tkinter GUI — no coding required  
+- Simple Tkinter GUI - no coding required  
 
 ---
 
@@ -29,8 +29,6 @@ The tool extracts each file’s **“Consignee (Ship To)”** name, cleans unwan
 2. **Extract PDFs** → App lists all PDFs in the left panel  
 3. **Rename Files** → App reads consignee name and renames each file  
 4. **Export ZIP** → Download the final ZIP of renamed PDFs  
-
----
 
 ## Use Case
 Perfect for **logistics, invoicing, and documentation teams** handling large batches of shipment or billing PDFs.  
