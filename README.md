@@ -1,36 +1,43 @@
-# Consignee-Based PDF Renaming Tool
+# Consignee File Automation Tool
 
-## Summary
-A lightweight **Python-based Windows desktop application** that automates the renaming of shipment or invoice PDFs using consignee information.  
-The tool extracts each file’s **“Consignee (Ship To)”** name, cleans unwanted text (like *“Buyer’s Order No.”* or *“Dated”*), and exports the renamed files as a neatly packaged ZIP — ideal for logistics and documentation teams.
+A desktop application built with Tkinter for automating PDF and Excel file processing tasks, including renaming, splitting, and organizing consignee-related files.
 
----
+## Features
+- **PDF Rename (1 Page File):**  
+  Automatically extracts consignee names from single-page PDFs and renames files accordingly.
+
+- **PDF Split & Rename (Multi Page File):**  
+  Splits multi-page PDFs into individual pages and renames each file using extracted consignee details.
+
+- **Excel Split & Rename:**  
+  Splits Excel files by columns such as *Party Name* or *Comm Grouping* and saves organized output files.
+
+- **Smart UI:**  
+  Simple and modern interface with mode switching, live progress tracking, and color-coded activity logs.
+
+- **Threaded Execution:**  
+  Handles heavy operations in the background without freezing the interface.
 
 ## Tech Stack
-- **Language:** Python 3  
-- **GUI Framework:** Tkinter  
-- **Libraries:** `pdfplumber`, `zipfile`, `tempfile`, `shutil`, `re`, `os`, `uuid`, `pathlib`
+- Python 3  
+- Tkinter (GUI)  
+- PyPDF2, pdfplumber  
+- Pandas, OpenPyXL
 
----
+## Installation
+Install all dependencies before running the tool:
+```bash
+pip install PyPDF2 pdfplumber pandas openpyxl
+```
 
-## Key Features
-- Upload a ZIP file containing multiple PDFs  
-- Automatically extract and list all PDFs in the interface  
-- Detect consignee names from **“Consignee (Ship To)”** or **“Ship To”** fields  
-- Clean extracted names by removing text like *“Buyer’s Order No.”* or *“Dated”*  
-- Rename files intelligently with serial numbers for duplicates  
-- Export all renamed PDFs as a single downloadable ZIP  
-- Simple Tkinter GUI - no coding required  
+## Usage
+- Launch the application.
+- Select the desired mode from the sidebar.
+- Choose the input folder or file.
+- Click Start Processing to begin.
+- View progress and logs in real time.
 
----
-
-## Workflow
-1. **Upload ZIP** → User uploads a ZIP containing PDF documents  
-2. **Extract PDFs** → App lists all PDFs in the left panel  
-3. **Rename Files** → App reads consignee name and renames each file  
-4. **Export ZIP** → Download the final ZIP of renamed PDFs  
-
-## Use Case
-Perfect for **logistics, invoicing, and documentation teams** handling large batches of shipment or billing PDFs.  
-This tool ensures **clean, consistent, and automated file naming** based on consignee details - saving hours of manual effort.
-
+## Notes
+- Ensure input files are properly formatted.
+- PDF files must contain readable text for name extraction.
+- Output files are automatically renamed and saved in the selected directory.
